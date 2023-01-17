@@ -6,6 +6,8 @@ body {
 	background-image: url('img/ship-7679100.jpg');
 	background-size: cover;
 	height: 100vh;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 .navTop {
@@ -64,7 +66,7 @@ li {
 	float: left;
 	display: block;
 	padding: 8px;
-	font-family: "Courier New";
+	font-family: "Courier New", Verdana, sans;
 }
 
 button {
@@ -95,14 +97,46 @@ header {
 	margin-left: 5%;
 }
 
+.aboutMe {
+	/* background-color: #FDBCB4; */
+	padding: 20px 20px;
+	background: rgba(253, 188, 180, .5); /* TRANSPARENT BLOCK*/
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
 
-/*#sunset {
-	height: 100vh;
-	margin: 0;
-	border: 0;
+main section div img {
+	width:200px;
+	height: auto;
+	border-radius: 100px;
+    border: 0px;
+	box-shadow: 2px 5px 4px 5px #8C92AC;
+}
 
-}*/
+.aboutText {
+	background-color: #FFFFFF;
+	margin: 10px 30px;
+	padding: 10px 40px;
+	border-radius: 100px;
+	align: center;
+	color: #8C92AC;
+	font-family:Verdana, sans;
+	/*shadows*/
+    border: 0px;
+	box-shadow: 2px 5px 4px 5px #8C92AC;
+}
+
 @media screen and (max-width: 1000px){
+	body {
+		background-color: #CCCCFF;
+		background-image: url('img/ship-7679100.jpg');
+		background-size: cover;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+	
 	#menu {
 		width: 800px;
 		display: none;
@@ -127,5 +161,15 @@ header {
 		font-size: 200%;
 		margin-top: 20%;
 		margin-left: 5%;
+	}
+	
+	.aboutMe {
+		/* background-color: #FDBCB4; */
+		padding: 20px 20px;
+		background: rgba(253, 188, 180, .5); /* TRANSPARENT BLOCK*/
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 }
