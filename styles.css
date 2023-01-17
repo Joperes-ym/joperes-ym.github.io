@@ -116,7 +116,7 @@ header {
 		background-color: #FDBCB4;
 	}
 	
-	nav {
+	.navTop {
 		display: flex;
 		justify-content: space-between;
 	}
