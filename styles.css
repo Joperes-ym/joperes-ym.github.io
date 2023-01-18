@@ -21,6 +21,9 @@ body {
     top: 0;
     width: 100%;
 	font-family: "Courier New", Verdana, sans;
+    border: 0px;
+	box-shadow: 1px 1px 1px 1px rgb(0, 0, 0, 0.2);
+	z-index: 10;
 	
 }
 .navBottom {
@@ -98,10 +101,19 @@ header {
 	
 }
 
-main {
-	/* display: flex;
-	justify-content: center; */
-	
+.main01 {
+	height: 100vh;
+}
+
+.main02 {
+	padding: 5%;
+	background: rgba(253, 188, 180, .5); /* TRANSPARENT BLOCK*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 10%;
+    border: 0px;
+	box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.2);
 }
 
 .aboutMe {
@@ -112,14 +124,17 @@ main {
 	justify-content: space-around;
 	align-items: center;
 	padding-left: 10%;
+    border: 0px;
+	box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.2);
+	
 }
 
-main section div img {
+#photo {
 	width:200px;
 	height: auto;
 	border-radius: 100px;
     border: 0px;
-	box-shadow: 2px 5px 4px 5px #8C92AC;
+	box-shadow: 2px 5px 4px 5px rgb(140, 146, 172, 0.2);
 }
 
 .aboutText {
@@ -131,12 +146,10 @@ main section div img {
 	font-family:Verdana, sans;
 	/*shadows*/
     border: 0px;
-	box-shadow: 2px 5px 4px 5px #8C92AC;
+	box-shadow: 2px 5px 4px 5px rgb(140, 146, 172, 0.2);
 	margin-right: 10%;	
 }
-.aboutText p {
-	text-justify: inter-word; /* NOT WORKING why?*/
-}
+
 
 .skillLogo {
 	max-width: 100px;
@@ -153,8 +166,22 @@ main section div img {
 	display: flex;
 	justify-content: space-around;
 	padding: 20px 0 40px 0;
-	
-	
+}
+
+.portfolioSection {
+	display: flex;
+	flex-wrap: wrap;
+}
+.portfolio {
+	width: 32%;
+	padding: 15px;
+	text-align: center;
+	background-color: #ffffff;
+	margin: 5px;
+}
+
+.portfolio img {
+	width: 200px;
 }
 
 @media screen and (max-width: 1000px){
