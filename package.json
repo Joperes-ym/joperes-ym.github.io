@@ -2,7 +2,7 @@
   "name": "joperes-ym.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/Joperes-ym/joperes-ym.github.io.git"
+  "homepage": "joperes-ym.github.io"
   "dependencies": {
     "@react-email/link": "0.0.7",
     "@testing-library/jest-dom": "^5.17.0",
